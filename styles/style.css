@@ -1,0 +1,26 @@
+header {
+    display: inline-grid;
+    background-color: rgb(42, 42, 42);
+    width: 100vw;
+    grid-template-rows: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+h1 {
+    font-weight: 50px;
+    justify-content: center;
+}
+
+.col:first-of-type {
+    color: white;
+    font-weight: 200px;
+    display: inline-grid;
+    justify-content: left;
+}
+
+.col:nth-of-type(2) {
+    color: white;
+    font-weight: 200px;
+    display: inline-grid;
+    justify-content: end;
+}
