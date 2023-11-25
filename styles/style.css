@@ -2,7 +2,7 @@ header {
     display: inline-grid;
     background-color: rgb(42, 42, 42);
     width: 100vw;
-    grid-template-rows: 2rem;
+    grid-template-rows: 2.3rem;
     grid-template-columns: 1fr 2fr;
 }
 
@@ -10,6 +10,7 @@ header {
     color: white;
     display: inline-grid;
     justify-content: left;
+    align-items: center;
     margin-left: 7rem;
 }
 
@@ -17,6 +18,7 @@ header {
     color: white;
     display: inline-grid;
     justify-content: end;
+    align-items: center;
     margin-right: 7rem;
 }
 
@@ -26,6 +28,7 @@ header {
     margin-bottom: 1rem;
     margin-right: 7.5rem;
     margin-left: 7.5rem;
+    border-radius: 3px;
 }
 
 h1 {
@@ -55,27 +58,45 @@ button:first-of-type {
     margin-bottom: 1rem;
     margin-right: 7rem;
     margin-left: 7rem;
-    gap: 2rem;
+    grid-template-rows: 1fr;
 }
 
 .card-img-top {
     justify-content: space-between;
-    width: 15.6rem;
+    width: 11rem;
     height: 9rem;
 }
 
 .card1, .card2, .card3, .card4 {
-    display: grid;
-    align-items:flex-end;
-    justify-content: space-between;
+    display: inline-grid;
+    justify-content: space-evenly;
+    grid-template-rows: repeat(2, 0.3fr) 0.2fr;
+    grid-template-columns: 11rem;
+    margin: 1.5rem;
+    border-radius: 5000px;
 }
 
 h3 {
     padding-left: 4rem;
 }
 
+button:nth-of-type(2) {
+    position: relative;
+    margin-top: 0.7fr;
+}
+
+.b2 {
+    background-color: rgb(223, 220, 220);
+    height: 3rem;
+}
+
 p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer {
